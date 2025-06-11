@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@theme {
+  --font-display: "Avenir", "sans-serif";
+  --color-primary: #34B2AC;
+  --color-secondary: #303745;
+  --color-body: #2A3340;
+}
