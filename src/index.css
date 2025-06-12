@@ -1,7 +1,12 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Acumin Pro Wide';
+  src: local('Acumin Pro Wide '), url(./fonts/acumin-pro-wide.otf) format('otf');
+}
+
 @theme {
-  --font-display: "Avenir", "sans-serif";
+  --font-display: "Acumin Pro Wide", "sans-serif";
   --color-primary: #34B2AC;
   --color-secondary: #303745;
   --color-body: #2A3340;

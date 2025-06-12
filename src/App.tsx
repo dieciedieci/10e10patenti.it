@@ -23,7 +23,7 @@ function App() {
       </LayoutBoxed>
       <LayoutBoxed className="grid gap-22 md:gap-8 my-22">
         {features.map((feature, index) => (
-          <FeatureBlock key={index} feature={feature} />
+          <FeatureBlock key={index} {...feature} />
         ))}
       </LayoutBoxed>
 
@@ -34,17 +34,18 @@ function App() {
             <p className="text-md md:text-lg text-gray-200">Puoi adottare la soluzione che preferisci, e cambiarla quando vuoi, in base al numero di utenti attivi mensili della tua autoscuola.</p>
           </div>
           <div className="grid items-center gap-4 grid-cols-1 md:grid-cols-7">
-            {plans.map((plan, index) => (
-              <PlanBlock
-                key={index}
-                className={`md:col-span-${index !== 1 ? '2' : '3'} md:row-span-1 ${index === 1 ? 'md:min-h-[450px]' : ''}`}
-                planInfo={plan}
-              />
-            ))}
+            {plans.map((plan, index) => {
+              const colSpan = index !== 1 ? "md:col-span-2" : "md:col-span-3";
+              const extraClasses = index === 1 ? "md:min-h-[450px]" : "";
 
-            {/* <PlanBlock className="md:col-span-2 md:row-span-1" />
-            <PlanBlock className="md:col-span-3 md:row-span-1 md:min-h-[500px] bg-white" />
-            <PlanBlock className="md:col-span-2 md:row-span-1" /> */}
+              return (
+                <PlanBlock
+                  key={index}
+                  className={`md:row-span-1 ${colSpan} ${extraClasses}`}
+                  planInfo={plan}
+                />
+              );
+            })}
           </div>
         </LayoutBoxed>
       </LayoutFullWidth>

@@ -1,4 +1,5 @@
 import logo from '../assets/logo.png';
+import Button from './Button';
 
 const navLinks = [
   { name: 'Come funziona', href: '/about' },
@@ -14,10 +15,11 @@ export default function Navigation() {
       <ul className='flex gap-4 md:gap-6'>
         {
           navLinks.map((link) => (
-            <li key={link.name}><a href={link.href} className='text-gray-700 hover:text-red-500 transition-colors'>{link.name}</a></li>
+            <li key={link.name}><a href={link.href} className='text-gray-700 hover:text-primary transition-colors'>{link.name}</a></li>
           ))
         }
       </ul>
+      <Button>button</Button>
     </nav>
   )
 }
