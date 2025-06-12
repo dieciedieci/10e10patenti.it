@@ -10,7 +10,7 @@ export default function FeatureBlock({ eyebrow, title, description, image, image
         </div>
         <p className="text-md">{description}</p>
       </div>
-      <img className="rounded-lg" src={image} alt={imageAlt} />
+      <img className="rounded-lg" src={image} alt={imageAlt} style={{"height": "400px"}} />
     </div>
   )
 }

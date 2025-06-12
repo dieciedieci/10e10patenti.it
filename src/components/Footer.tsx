@@ -1,10 +1,8 @@
 import logo from '../assets/logo.png';
 
 const navLinks = [
-  { name: 'Come funziona', href: '/about' },
-  { name: 'Prezzi', href: '/plans' },
-  { name: 'Scopri l\'app', href: '/app' },
-  { name: 'FAQ', href: '/faq' },
+  { name: 'Facebook', href: 'https://www.facebook.com/autoscuola10e10/' },
+  { name: 'Instagram', href: 'https://www.instagram.com/_dieci_e_dieci_/' },
 ];
 
 export default function Footer() {

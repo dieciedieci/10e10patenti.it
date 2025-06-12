@@ -1,10 +1,10 @@
 import logo from '../assets/logo.png';
 
 const navLinks = [
-  { name: 'Come funziona', href: '/about' },
-  { name: 'Prezzi', href: '/plans' },
-  { name: 'Scopri l\'app', href: '/app' },
-  { name: 'FAQ', href: '/faq' },
+  { name: 'App Androd & iOS', href: '/mobile-app' },
+  { name: 'Marketing e Social', href: '/marketing' },
+  { name: 'Branding', href: '/branding' },
+  { name: 'Contattaci', href: 'mailto:info@10e10patenti.it' },
 ];
 
 export default function Navigation() {
