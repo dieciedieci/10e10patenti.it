@@ -1,19 +1,12 @@
 import type { ButtonProps } from "../types/Button";
 
-export default function Button({ buttonLink, onClick, children }: ButtonProps) {
-  const className = "cursor-pointer text-center rounded-lg bg-primary hover:bg-secondary transition-colors text-white text-xs uppercase px-6 py-3";
-
-  if (buttonLink) {
-    return (
-      <a href={buttonLink} className={className}>
-        {children}
-      </a>
-    );
-  }
-
+export default function Button({ buttonLink, isReverse, onClick, children }: ButtonProps) {
+  const HTMLTag = buttonLink ? "a" : "button";
+  const className = `flex items-start gap-2 cursor-pointer text-center rounded-lg ${isReverse ? "border-2 border-secondary text-secondary" : "bg-primary text-white"
+    } hover:bg-secondary hover:text-white transition-colors  text-sm px-2 md:px-4 pt-3 md:pt-4 pb-2 md:pb-3`;
   return (
-    <button onClick={onClick} className={className}>
+    <HTMLTag href={buttonLink} onClick={onClick} className={className}>
       {children}
-    </button>
+    </HTMLTag>
   );
 }

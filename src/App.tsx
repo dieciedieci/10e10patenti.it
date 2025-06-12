@@ -1,3 +1,5 @@
+import AppStoreLinks from "./components/AppStoreLinks"
+import FaqItem from "./components/FaqItem"
 import FeatureBlock from "./components/FeatureBlock"
 import Footer from "./components/Footer"
 import LayoutBoxed from "./components/LayoutBoxed"
@@ -6,6 +8,7 @@ import Navigation from "./components/Navigation"
 import PlanBlock from "./components/PlanBlock"
 import { features } from "./data/features"
 import { plans } from "./data/plans"
+import { faqs } from "./data/faqs"
 
 function App() {
   return (
@@ -44,6 +47,23 @@ function App() {
                   className={`md:row-span-1 ${colSpan} ${extraClasses}`}
                   planInfo={plan}
                 />
+              );
+            })}
+          </div>
+        </LayoutBoxed>
+      </LayoutFullWidth>
+      <LayoutBoxed>
+        <AppStoreLinks />
+      </LayoutBoxed>
+      <LayoutFullWidth className="py-16 bg-secondary">
+        <LayoutBoxed className="grid gap-8">
+          <div className="text-center mb-8 grid gap-4 max-w-3xl mx-auto">
+            <h2 className="text-2xl md:text-4xl text-white font-bold">Domande frequenti</h2>
+          </div>
+          <div className="grid gap-8">
+            {faqs.map((faq, index) => {
+              return (
+                <FaqItem key={index} question={faq.question} answer={faq.answer} />
               );
             })}
           </div>

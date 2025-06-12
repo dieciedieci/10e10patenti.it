@@ -1,5 +1,4 @@
 import logo from '../assets/logo.png';
-import Button from './Button';
 
 const navLinks = [
   { name: 'Come funziona', href: '/about' },
@@ -19,7 +18,6 @@ export default function Navigation() {
           ))
         }
       </ul>
-      <Button>button</Button>
     </nav>
   )
 }
