@@ -5,4 +5,5 @@ export type FeatureProps = {
   image: string;
   imageAlt: string;
   isReverse?: boolean;
+  displayMobileAppDownloadCards?: boolean,
 }

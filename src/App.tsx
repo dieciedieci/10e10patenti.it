@@ -1,4 +1,3 @@
-import AppStoreLinks from "./components/AppStoreLinks"
 import FaqItem from "./components/FaqItem"
 import FeatureBlock from "./components/FeatureBlock"
 import Footer from "./components/Footer"
@@ -54,13 +53,10 @@ function App() {
           </div>
         </LayoutBoxed>
       </LayoutFullWidth>
-      <LayoutBoxed>
-        <AppStoreLinks />
-      </LayoutBoxed>
-      <LayoutFullWidth className="py-16 bg-secondary">
+      <LayoutFullWidth className="py-16">
         <LayoutBoxed className="grid gap-8">
           <div className="text-center mb-8 grid gap-4 max-w-3xl mx-auto">
-            <h2 className="text-2xl md:text-4xl text-white font-bold">Domande frequenti</h2>
+            <h2 className="text-2xl md:text-4xl font-bold">Domande frequenti</h2>
           </div>
           <div className="grid gap-8">
             {faqs.map((faq, index) => {

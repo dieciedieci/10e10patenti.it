@@ -3,6 +3,7 @@ export const features = [
     eyebrow: "Permetti ai tuoi studenti di sentirsi a casa",
     title: "Applicazione Android e iOS",
     description: "Metti la tua autoscuola direttamente tra le mani dei tuoi studenti. Snellisci l'organizzazione delle guide e tieni traccia dei loro progressi.",
+    displayMobileAppDownloadCards: true,
     image: "https://autoscuoladieciedieci.it/wp-content/uploads/2025/02/1.png",
     imageAlt: "Applicazione mobile per Android e iOS",
   },
