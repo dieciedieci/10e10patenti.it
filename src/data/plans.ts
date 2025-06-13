@@ -1,6 +1,6 @@
 export const plans = [
   {
-    title: "Piano Base",
+    title: "Costo per utente attivo`",
     description: "Per piccole autoscuole",
     price: "€49",
     features: [
