@@ -10,7 +10,7 @@ const appStoreLinks = [
   {
     buttonIcon: IoLogoGooglePlaystore,
     buttonLink: 'https://play.google.com/store/apps/details?id=app.dieciedieci.autoscuola&pcampaignid=web_share',
-    buttonText: 'Play Store Store'
+    buttonText: 'Play Store'
   },
 
 ];

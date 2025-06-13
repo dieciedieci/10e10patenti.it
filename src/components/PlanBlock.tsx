@@ -1,4 +1,5 @@
 import type { PlanProps } from "../types/Plan";
+import Button from "./Button";
 
 export default function PlanBlock({ className, planInfo }: PlanProps) {
   if (!planInfo) return null;
@@ -26,7 +27,7 @@ export default function PlanBlock({ className, planInfo }: PlanProps) {
         </ul>
       </div>
 
-      <a href={planInfo.buttonLink} className="text-center rounded-lg bg-primary text-white font-bold px-4 py-3">{planInfo.buttonText}</a>
+      <Button buttonLink={planInfo.buttonLink}>{planInfo.buttonText}</Button>
     </div>
   );
 }
