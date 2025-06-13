@@ -1,11 +1,8 @@
-import AppStoreLinks from "../components/AppStoreLinks"
 import FaqItem from "../components/FaqItem"
 import FeatureBlock from "../components/FeatureBlock"
 import LayoutBoxed from "../components/LayoutBoxed"
 import LayoutFullWidth from "../components/LayoutFullWidth"
-import PlanBlock from "../components/PlanBlock"
 import { features } from "../data/features"
-import { plans } from "../data/plans"
 import { faqs } from "../data/faqs"
 
 export default function Home() {
@@ -26,26 +23,11 @@ export default function Home() {
       </LayoutBoxed>
       <LayoutFullWidth className="py-16 bg-secondary">
         <LayoutBoxed className="grid gap-8">
-          <div className="text-center mb-8 grid gap-4 max-w-3xl mx-auto">
-            <h2 className="text-2xl md:text-4xl text-white font-bold">Spendi solo quando guadagni</h2>
-            <p className="text-md md:text-lg text-gray-200">Molti dei servizi offerti seguono un piano mensile per utente attivo. Come per esempio l'accesso alle applicazioni mobile.</p>
-            <p className="text-md md:text-lg text-gray-200">Per diventare autoscuola dieci e dieci, se ti serve un aiuto con la parte infrastrutturale invece faremo un prezzo apposito.</p>
-            <p className="text-md md:text-lg text-gray-200">Se ti abbiamo incuriosito e per saperne di piu' scrivici un <a href="mailto:info@10e10patenti.it">e-mail</a></p>
-          </div>
-          <div className="grid items-center gap-4 grid-cols-1 md:grid-cols-7">
-            {//plans.map((plan, index) => {
-              //const colSpan = index !== 1 ? "md:col-span-2" : "md:col-span-3";
-              //const extraClasses = index === 1 ? "md:min-h-[450px]" : "";
-
-              //return (
-                //<PlanBlock
-                  //key={index}
-                  //className={`md:row-span-1 ${colSpan} ${extraClasses}`}
-                  //planInfo={plan}
-                ///>
-              //);
-            //})
-            }
+          <div className="text-center grid gap-4 max-w-3xl mx-auto">
+            <h2 className="text-2xl md:text-4xl mb-6 text-white font-bold">Spendi solo quando guadagni</h2>
+            <p className="text-md md:text-lg text-gray-300">Molti dei servizi offerti seguono un piano mensile per utente attivo. Come per esempio l'accesso alle applicazioni mobile.</p>
+            <p className="text-md md:text-lg text-gray-300">Per diventare autoscuola dieci e dieci, se ti serve un aiuto con la parte infrastrutturale invece faremo un prezzo apposito.</p>
+            <p className="text-md md:text-lg text-gray-300">Se ti abbiamo incuriosito e per saperne di piu' scrivici un <a href="mailto:info@10e10patenti.it">e-mail</a></p>
           </div>
         </LayoutBoxed>
       </LayoutFullWidth>

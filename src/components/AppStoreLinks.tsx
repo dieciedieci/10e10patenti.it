@@ -17,8 +17,8 @@ const appStoreLinks = [
 
 export default function AppStoreLinks() {
   return (
-    <section className='grid gap-8 py-16'>
-      <div className="flex flex-row items-center justify-center gap-4 md:gap-8">
+    <section className='grid gap-8'>
+      <div className="flex flex-row items-center gap-4 md:gap-8">
       {appStoreLinks.map((link, index) => {
         const Icon = link.buttonIcon;
         return (
